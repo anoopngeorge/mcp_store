@@ -71,15 +71,19 @@ def process_and_print_response(response):
 if __name__ == "__main__":
     item = "apple"
     quantity = 3
+    print("\n------------Adding an item to the cart------------")
     response = asyncio.run(main(f"Add an item {item} of quantity {quantity} to mcpstore website cart"))
     process_and_print_response(response)
-    
+
+    print("\n------------Getting the cart contents------------")
     response = asyncio.run(main(f"Get the mcpstore website cart contents"))
     process_and_print_response(response)
 
+    print("\n------------Removing an item from the cart------------")
     response = asyncio.run(main(f"Remove the item {item} from mcpstore website cart"))
     process_and_print_response(response)
 
+    print("\n------------Getting the cart contents after removing an item------------")
     response = asyncio.run(main(f"Get the mcpstore website cart contents"))
     process_and_print_response(response)
     

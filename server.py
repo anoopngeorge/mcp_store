@@ -1,5 +1,4 @@
 from fastmcp import FastMCP
-import uuid
 
 # math_server.py
 mcp = FastMCP("Math")
