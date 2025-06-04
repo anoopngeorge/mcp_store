@@ -1,7 +1,6 @@
 from fastmcp import FastMCP
 
-# math_server.py
-mcp = FastMCP("Math")
+mcp = FastMCP("MCP_STORE")
 
 # Cart to store items
 mcp_cart = {}

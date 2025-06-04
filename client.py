@@ -17,7 +17,7 @@ model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 async def main(query: str):
     """Main function to process queries using the MCP client."""
     client = MultiServerMCPClient({
-        "math": {
+        "mcpstore": {
             "url": "http://127.0.0.1:8001/mcp",  # Replace with the remote server's URL
             "transport": "streamable_http"
         }
